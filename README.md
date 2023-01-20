@@ -1,6 +1,6 @@
 # your-day
 
-**Tech stack:**
+### Tech stack:
 - HTML
 - CSS (Tailwind)
 - JavaScript (React)
