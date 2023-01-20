@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.heading4 {
+  font-family: "Open Sans", "sans-serif";
+  /* font-size: 2.5vw; */
+  line-height: 1.36;
+  font-weight: 400;
+}
+
+@media(max-width:621px) {
+    html {
+      font-size: 12px;
+    }
+}
+
+.heading2 {
+  font-family: "Ubuntu", "sans-serif";
+  font-size: 3rem;
+  line-height: 1.146;
+  font-weight: 400;
+}
+
+.card-paragraph {
+  font-family: "Open Sans", "sans-serif";
+  /* font-size: 1.5rem; */
+  line-height: 1.375;
+  font-weight: 300;
+}
+
+.card {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05)
+}
+
+.button {
+  transition: all 0.3s ease-in-out;
+}
+
+.button-pink {
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  @apply text-white bg-pink border-white
+}
+
+.button-pink:hover {
+  @apply text-pink bg-white border-pink
+}
+
+.margin-left {
+  margin-left: calc((100vw - 1180px) / 2);
+}
+
+@media (max-width:1441px) {
+  .margin-left {
+    margin-left: 0;
+  }
+}
